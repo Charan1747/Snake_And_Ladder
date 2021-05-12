@@ -2,21 +2,20 @@
 
 namespace SnakeAndLadder
 {
-    class SnakeAndLadder
+    class SnakeGame
     {
         int START_POSITION = 0;
-        public void PlayGame()
+        public void Play()
         {
-            Random random = new Random();
-            int die = random.Next(1, 7);
-            Console.WriteLine("Player Position : " + die);
-            Console.WriteLine("Single Player Start Position:  " + START_POSITION);
+            Console.WriteLine(" Single Player Starting Position: " + START_POSITION);
             Console.ReadLine();
         }
         static void Main(string[] args)
         {
-            SnakeAndLadder StartPlay = new SnakeAndLadder();
-            StartPlay.PlayGame();
+            SnakeGame Start = new SnakeGame();
+            Start.Play();
+
         }
+
     }
 }
